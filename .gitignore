@@ -1,0 +1,32 @@
+# === Node (frontend) ===
+node_modules/
+build/
+dist/
+.env
+.env.*
+
+# === Python (backend) ===
+../backend/__pycache__/
+../backend/*.py[cod]
+../backend/*.egg-info/
+../backend/venv/
+../backend/.env
+../backend/.env.*
+
+# === Global (anywhere) ===
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/env/
+**/venv/
+**/.env
+**/.env.*
+
+# === OS / Editor / IDE ===
+.DS_Store
+Thumbs.db
+*.swp
+
+# === VSCode / JetBrains / Others ===
+.vscode/
+.idea/
