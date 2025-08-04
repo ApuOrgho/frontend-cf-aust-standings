@@ -1,1 +1,26 @@
-node_modules
+# === Node (frontend) ===
+node_modules/
+build/
+dist/
+.env
+.env.*
+
+# === Global (anywhere) ===
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/env/
+**/venv/
+**/.env
+**/.env.*
+
+# === OS / Editor / IDE ===
+.DS_Store
+Thumbs.db
+*.swp
+
+# === VSCode / JetBrains / Others ===
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
