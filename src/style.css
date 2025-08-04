@@ -15,6 +15,43 @@ body {
   color: #064e03; /* dark green text */
   text-align: center;
 }
+/*app-footer*/
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 24px;
+  background-color: #e8f5e9;
+  border-top: 1px solid #c8e6c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  z-index: 1000;
+}
+
+.footer-text {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: #2e7d32;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00c853;
+}
 
 /* Background image with overlay */
 .app-background {
@@ -46,6 +83,7 @@ body {
   justify-content: center;
   padding: 40px 16px;
   box-sizing: border-box;
+  padding-bottom: 100px;
 }
 
 /* Main title */
@@ -352,48 +390,71 @@ td.penalty.null {
 
 /* Responsive styles */
 @media (max-width: 600px) {
-  .top-left-logo,
-  .top-right-logo {
-    width: 36px;
-    height: 36px;
-    top: 12px;
-    left: 12px;
-    right: 12px;
+  .main-title-box {
+    padding: 16px;
+    margin: 16px auto;
   }
+
   .title-line {
     font-size: 1.6rem;
   }
+
   .title-subline {
     font-size: 1rem;
   }
+
   .contest-input {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     height: 40px;
-    line-height: 40px;
-    padding: 0 15px;
-    font-size: 1.1rem;
-    box-sizing: border-box;
+    padding: 0 14px;
   }
 
   .load-button {
-    width: 100%;
     font-size: 1.1rem;
     padding: 12px 0;
-  }
-
-  .standings-table-container {
-    padding: 10px;
-    margin-bottom: 20px;
+    width: 100%;
   }
 
   .standings-table th,
   .standings-table td {
-    padding: 0.6rem 0.8rem;
-    font-size: 0.85rem;
+    padding: 8px 6px;
+    font-size: 0.8rem;
   }
 
   .contest-title {
-    font-size: 1.4rem;
-    padding: 10px 16px;
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  .button-row-top-right,
+  .button-row-outside {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .top-left-logo,
+  .top-right-logo {
+    width: 36px;
+    height: 36px;
+    top: 10px;
+  }
+
+  .footer-links {
+    gap: 14px;
+  }
+
+  .app-footer {
+    font-size: 0.85rem;
+    padding: 12px;
+  }
+
+  .standings-table-container {
+    padding: 12px;
+    margin-bottom: 80px;
+  }
+
+  .app-container {
+    padding: 24px 12px 120px;
   }
 }

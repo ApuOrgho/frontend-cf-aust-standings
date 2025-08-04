@@ -4,6 +4,7 @@ import CF_AUST_HANDLES from "./handles/cf-aust-handles";
 import CfStandingsTable from "./components/cf-standings-table";
 import html2canvas from "html2canvas";
 import "./style.css";
+import Footer from "./components/footer"; // adjust the path as needed
 
 // Automatically detect local or production
 const API_BASE = process.env.REACT_APP_API_URL;
@@ -111,7 +112,7 @@ function App() {
         <div className="search-container">
           <input
             type="text"
-            placeholder="Enter Valid Contest ID (e.g. 1234)"
+            placeholder="Enter A Valid Contest ID (e.g. 1234)"
             value={contestId}
             onChange={(e) => setContestId(e.target.value)}
             className="contest-input"
@@ -133,6 +134,7 @@ function App() {
             downloading={downloading}
           />
         )}
+        <Footer />
       </div>
     </>
   );
